@@ -1,1 +1,1 @@
-## Start with TS, StyledComponents and React-Router-Dom
+## Start with TS, Styled-Components and React-Router-Dom
