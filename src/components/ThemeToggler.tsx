@@ -15,7 +15,7 @@ const ToggleButton = styled.button`
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 55px;
+    min-width: 55px;
     background: ${({ theme }) => theme.bgColor};
     border: 2px solid ${({ theme }) => theme.toggleBorder};
     border-radius: 20px;

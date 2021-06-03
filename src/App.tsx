@@ -9,13 +9,23 @@ function App() {
     const themeMode = useThemeMode();
     const mode = themeMode.theme === 'light' ? lightTheme : darkTheme;
 
+    if (themeMode.mounted === false) return <div />
+
     return (
         <ThemeProvider theme={mode}>
             <GlobalStyle />
             <BrowserRouter>
                 <Switch>
                     <Route exact path='/' >
-                        Theme will change
+                        <div style={{
+                            width: '500px',
+                            height: '100px',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            }}>
+                            Theme will change
+                        </div>
                     </Route>
                 </Switch>
                 <ThemeToggler toggler={themeMode.toggler} theme={themeMode.theme}/>

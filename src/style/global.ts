@@ -18,14 +18,12 @@ const GlobalStyle = createGlobalStyle<ITheme>`
     }
 
     body {
-        margin: 0;
-        padding: 0;
-        background: ${({ theme }) => theme.body};
+        background-color: ${({ theme }) => theme.body};
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: all 0.15s ease;
+        transition: background-color 0.3s ease, color 0.3s ease;
         color: ${({ theme }) => theme.text};
     };
 `;
